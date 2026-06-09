@@ -2,7 +2,28 @@
 
 A full-stack personal finance management platform that helps users track income, expenses, budgets, savings goals, and financial trends through interactive analytics and visual dashboards.
 
-## Features
+## Project Status
+
+**Version 1 Completed**
+
+**Implemented Features:**
+* Authentication
+* Transaction Management
+* Budget Management
+* Savings Goals
+* Analytics Dashboard
+* CSV Export
+* Dark/Light Theme
+
+**Planned Future Enhancements:**
+* AI Financial Coach
+* Receipt OCR Scanner
+* Spending Forecasting
+* Subscription Tracker
+* Email Notifications
+* PWA Support
+
+## Features Detailed
 
 ### Authentication
 * JWT Authentication
@@ -63,6 +84,9 @@ A full-stack personal finance management platform that helps users track income,
 * MongoDB
 * Mongoose
 
+**Database Management Tool:**
+* MongoDB Compass
+
 **Authentication:**
 * JWT (JSON Web Tokens)
 
@@ -91,32 +115,18 @@ The backend follows a layered MVC architecture:
 - **SavingsGoal**: Tracks long-term saving objectives (`targetAmount`, `currentAmount`).
 - **MonthlySummary**: Stores aggregated end-of-month snapshots for historical reporting.
 
-## Screenshots
-
-*(Placeholder for Screenshots)*
-
-- **Login Page**: `![Login Page](/screenshots/login.png)`
-- **Dashboard**: `![Dashboard Overview](/screenshots/dashboard.png)`
-- **Transactions Page**: `![Transactions List](/screenshots/transactions.png)`
-- **Budget Page**: `![Budget Utilization](/screenshots/budgets.png)`
-- **Analytics Page**: `![Financial Analytics](/screenshots/analytics.png)`
-- **Savings Goals Page**: `![Savings Goals](/screenshots/savings.png)`
-
 ## Installation
 
 Follow these steps to run the project locally.
 
 ### 1. MongoDB Setup
-Ensure you have MongoDB running locally on `localhost:27017` or update the `MONGO_URI` with your cloud Atlas string.
+Ensure you have MongoDB running locally on port `27017` or update the `MONGO_URI` with your cloud Atlas string.
 
 ### 2. Environment Variables
-Navigate to the `backend` folder and create a `.env` file based on the provided template:
-```bash
-cd backend
-cp .env.example .env
-```
+Create a `.env` file inside the backend directory and populate it using the values described in `.env.example`.
 
 ### 3. Backend Setup
+Navigate to the backend directory, install dependencies, and start the development server:
 ```bash
 cd backend
 npm install
@@ -125,7 +135,7 @@ npm run dev
 The server will start on port 5000.
 
 ### 4. Frontend Setup
-Open a new terminal window:
+Open a new terminal window, navigate to the frontend directory, install dependencies, and start the Vite development server:
 ```bash
 cd frontend
 npm install
@@ -162,37 +172,31 @@ The application will launch in your browser at `http://localhost:5173`.
 - `GET /api/analytics/expenses-breakdown` - Get data for categorical pie charts
 - `GET /api/analytics/income-vs-expense/:year` - Get monthly comparison data
 
-## Future Enhancements
-- **AI Financial Coach**: Personalized spending advice using LLMs.
-- **Receipt OCR Scanner**: Automatically extract transaction data from images.
-- **Spending Forecasting**: Predict end-of-month balances based on current trends.
-- **Subscription Tracker**: Detect and alert on recurring payments.
-- **Email Notifications**: Weekly financial digests.
-- **PWA Support**: Installable mobile experience.
+## Key Learning Outcomes
 
-## Resume Highlights
-- **Full Stack Development**: End-to-end implementation of a modern React/Node application.
-- **JWT Authentication**: Secured APIs using stateless JWT tokens and protected routing.
-- **REST APIs**: Designed clean, predictable, and modular HTTP interfaces.
-- **MongoDB Data Modeling**: Implemented relationships, indexing, and advanced Aggregation Pipelines for complex data analysis.
-- **Dashboard Analytics**: Integrated Chart.js for responsive and interactive data visualization.
+* Full Stack Development
+* JWT Authentication
+* REST API Design
+* MongoDB Data Modeling
+* Chart.js Data Visualization
+* React State Management
+* Express Middleware
 
 ## Deployment
 
-### Frontend (Vercel)
-1. Connect your GitHub repository to Vercel.
-2. Set the Root Directory to `frontend`.
-3. Add the environment variable `VITE_API_URL` pointing to your backend live URL.
-4. Deploy.
+**Current Status:**
+* Not deployed yet.
+* Developed and tested locally.
 
-### Backend (Render/Railway)
-1. Connect your repository to Render or Railway.
-2. Set the Root Directory to `backend`.
-3. Set the build command to `npm install` and start command to `npm start`.
-4. Add `MONGO_URI`, `JWT_SECRET`, and `NODE_ENV=production` as environment variables.
-5. Deploy.
+**Planned Deployment:**
+* Frontend: Vercel
+* Backend: Render or Railway
+* Database: MongoDB Atlas
 
-### Database (MongoDB Atlas)
-1. Create a free cluster on MongoDB Atlas.
-2. Whitelist your Backend IP addresses.
-3. Copy the connection string into the backend's `MONGO_URI` environment variable.
+**Current Development Environment:**
+* MongoDB Community Server
+* MongoDB Compass
+* Node.js
+* Express.js
+* React
+* Vite
