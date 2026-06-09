@@ -4,9 +4,10 @@ A full-stack personal finance management platform that helps users track income,
 
 ## Project Status
 
-**Version 1 Completed**
+**Active Development**
+Current Version: v1.0
 
-**Implemented Features:**
+**Completed:**
 * Authentication
 * Transaction Management
 * Budget Management
@@ -15,9 +16,9 @@ A full-stack personal finance management platform that helps users track income,
 * CSV Export
 * Dark/Light Theme
 
-**Planned Future Enhancements:**
+**Planned:**
 * AI Financial Coach
-* Receipt OCR Scanner
+* OCR Receipt Scanner
 * Spending Forecasting
 * Subscription Tracker
 * Email Notifications
@@ -120,7 +121,7 @@ The backend follows a layered MVC architecture:
 Follow these steps to run the project locally.
 
 ### 1. MongoDB Setup
-Ensure you have MongoDB running locally on port `27017` or update the `MONGO_URI` with your cloud Atlas string.
+Ensure you have MongoDB Community Server running locally on port `27017` and verify your connection using MongoDB Compass.
 
 ### 2. Environment Variables
 Create a `.env` file inside the backend directory and populate it using the values described in `.env.example`.
@@ -182,21 +183,21 @@ The application will launch in your browser at `http://localhost:5173`.
 * React State Management
 * Express Middleware
 
-## Deployment
+## Current Status
 
-**Current Status:**
-* Not deployed yet.
-* Developed and tested locally.
+This project is currently configured and tested in a local development environment.
 
-**Planned Deployment:**
+**Development Environment:**
+* Node.js
+* Express.js
+* MongoDB Community Server
+* MongoDB Compass
+* React
+* Vite
+
+The application has not yet been deployed to a production hosting platform.
+
+**Planned Future Deployment:**
 * Frontend: Vercel
 * Backend: Render or Railway
 * Database: MongoDB Atlas
-
-**Current Development Environment:**
-* MongoDB Community Server
-* MongoDB Compass
-* Node.js
-* Express.js
-* React
-* Vite
